@@ -29,6 +29,7 @@ BNO080 myIMU2; //Closed I2C ADR jumper - goes to address 0x4A
 void setup()
 {
   Serial.begin(9600);
+  while(!Serial);
   Serial.println();
   Serial.println("BNO080 Read Example");
 

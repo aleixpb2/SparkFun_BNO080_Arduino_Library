@@ -52,6 +52,7 @@ long measurements = 0; //Used for calc'ing Hz
 void setup()
 {
   Serial.begin(115200);
+  while(!Serial);
   Serial.println();
   Serial.println("BNO080 SPI Read Example");
 

@@ -30,6 +30,7 @@ byte imuRSTPin = 7;
 void setup()
 {
   Serial.begin(9600);
+  while(!Serial);
   Serial.println();
   Serial.println("BNO080 Read Example");
 

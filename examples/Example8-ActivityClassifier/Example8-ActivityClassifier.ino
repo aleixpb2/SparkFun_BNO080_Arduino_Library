@@ -38,6 +38,7 @@ byte activityConfidences[9]; //This array will be filled with the confidence lev
 void setup()
 {
   Serial.begin(9600);
+  while(!Serial);
   Serial.println();
   Serial.println("BNO080 Read Example");
 
